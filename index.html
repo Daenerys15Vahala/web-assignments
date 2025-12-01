@@ -3,30 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Animation Lab</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>My First Website</title>
+    <link rel="stylesheet" href="stylee.css" />
   </head>
   <body>
-    <h1>Css Animation Lab</h1>
-    <p>Hover over each card to see the animation.</p>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="logo"
+          ><i class="fas fa-laptop-code"></i> MyFirstSite</a
+        >
 
-    <div class="card-grid">
-      <div class="card card-one">
-        <h2>Card One</h2>
-        <p>Slides up and scales</p>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div class="card card-two">
-        <h2>Card Two</h2>
-        <p>Rotates a bit</p>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <h1>Welcome to My First Website!</h1>
+        <p>Hello! I'm Valentina, and I'm learning Web Development</p>
+        <a href="#about" class="btn">Let's Explore</a>
       </div>
-      <div class="card card-three">
-        <h2>Card Three</h2>
-        <p>Skews for a fun effect</p>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="profile-img">
+            <img
+              src="7B64E5FA-83B0-414B-8873-B5A92DB8412D_Original.jpg"
+              alt="Profile Picture"
+            />
+          </div>
+          <div class="about-text">
+            <h3>I'm Valentina, a beginner web developer</h3>
+            <p>
+              I started my web development journey recently and I'm excited to
+              share my first project with you.
+            </p>
+            <p>
+              When I'm not coding, you can find me painting or exploring new
+              tech strategies. I believe in continuous learning and improvement.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="card card-four">
-        <h2>Card Four</h2>
-        <p>Practice!</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3 class="skill-title">HTML</h3>
+            <p>
+              Building the structure of websites using semantic HTML5 elements.
+            </p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3 class="skill-title">CSS</h3>
+            <p>Creating amazing designs, layouts, and responsive interfaces.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <iframe
+              class="project-img"
+              src="featurecards.html"
+              src="stylefc.css"
+              class="project-img"
+              style="background: linear-gradient(135deg, #ff9a9e, #fad0c4)"
+            >
+              <i class="fas fa-blog"></i>
+            </iframe>
+            <div class="project-info">
+              <h3>Feature Card Products</h3>
+              <p>A simple product feature card design with button effects.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <iframe
+              class="project-img"
+              src="intermediatelayout.html"
+              src="styleil.css"
+              class="project-img"
+              style="background: linear-gradient(135deg, #ff9a9e, #fad0c4)"
+            >
+              <i class="fas fa-blog"></i>
+            </iframe>
+            <div class="project-info">
+              <h3>Layout Example</h3>
+              <p>
+                A simple webpage layout demonstrating header, content, and
+                footer sections.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <iframe
+              class="project-img"
+              src="profilecard.html"
+              src="styleso.css"
+              style="background: linear-gradient(135deg, #ffecd2, #fcb69f)"
+            >
+              <i class="fas fa-utensils"></i>
+            </iframe>
+            <div class="project-info">
+              <h3>Profiles</h3>
+              <p>A simple profile card design with social media links.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title" style="color: white">Contact Me</h2>
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              class="form-control"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn"
+            style="background: white; color: #3498db"
+          >
+            Send Message
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2025 My First Website. Created by Valentina</p>
+      </div>
+    </footer>
   </body>
 </html>
