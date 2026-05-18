@@ -1,4 +1,8 @@
-const name = prompt("What is your name?");
-const favoriteFood = prompt("What is your favorite food?");
+const userinput = prompt("Enter a number:");
+const number = Number(userinput);
 
-console.log("Hello " + name + "! " + favoriteFood + " sounds delicious!");
+if (number % 2 === 0) {
+  console.log(number + " is even");
+} else {
+  console.log(number + " is odd");
+}
